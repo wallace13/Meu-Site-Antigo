@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "pt">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width , initial-scale = 1">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="images/icon-menu.png">
+
+        <title>Wallace - Desenvolvedor de Software</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+				<div id = "collapsible-menu-button"></div>
+				<ul>
+                    <li><a class = "text-shadow" href = "#">INÍCIO</a></li>
+                    <li><a href = "#sobre">SOBRE</a></li>
+                    <li><a href = "#portfolio">Projetos</a></li>
+                    <li><a href = "#contact">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <ul class = "overlay">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <div id = "hero" class = "container">
+					<h1 class = "text-shadow" id="name">Wallace Sales</h1>
+                    <h2 id = "description" class = "text-shadow"><b>Serviços Gerais de Informática </b></br></br></h2>
+                    <span class = "spacer"></span>
+                </div>
+            </section>
+
+            <section>
+                <a name = "sobre"></a>
+                <div class = "container">
+						<div id = "services-citation">	
+							<div align="center">
+								<p id = "citation">
+								Integrabilidade, Confiabilidade e Usabilidade, palavras  que definem um bom profissional.
+								Como um bom Profisional, busco sempre entender as necessidades dos clientes e torna-las possiveis, 
+								não há limites para a imaginação e eu acredito, que tudo que parece impossivel de mais para ser realizado,
+								nada mais é do que uma chance de podermos inovar.
+								</p>
+							</div>
+						</div>
+						<h1 class = "headline2 text-shadow">Do que você precisa?</h1>
+					
+                    <div class = "projects-container box-shadow">
+                        <div class = "project"><div><h3>Documentações</h3>
+						<h4>Microsoft Word</h4>
+						<li>Curriculos, </li>
+						<li>Cartões de Visita, </li>
+						<li>Documentos </li>
+						<li>e etc..</li></div></div>
+						
+                        <div class = "project"><div><h3>Apresentações</h3>
+						<h4>Microsoft PowerPoint</h4>
+						<li>Apresentações Financeiras, </li>
+						<li>Apresentações Escolares, </li>
+						<li>Apresentações Comerciais </li>
+						<li>e etc..</li></div></div>
+						
+                        <div class = "project"><div><h3>Planilhas</h3>
+						<h4>Microsoft Excel</h4>
+						<li>Controle de Estoque, </li>
+						<li>Presença de funcionários, </li>
+						<li>Controle de Finanças </li>
+						<li>e etc..</li></div></div>
+                        <div class = "project"><div><h3>Programação</h3>
+						<h4>Eclipse, Notepad, Mysql</h4>
+						<li>SQL, </li>
+						<li>Java, </li>
+						<li>Html, </li>
+						<li>CSS, </li> 
+						<li>PHP, </li>
+						<li>e etc..</li></div></div>      
+                    </div>
+						
+			    </div>
+            </section>
+			<section>
+                <a name = "portfolio"></a>
+                <div class = "container">
+						<h1 class = "headline text-shadow">Projetos</h1>
+                    <div id = "services-container">
+                       <div class = "service" align="center">
+							<img class = "icon-medium" src = "images/estop.png" alt = "projeto">
+							<p>Feito em Linguagem Java, este sistema tem por objetivo, o controle de acesso
+							de veiculos a um estacionamento.</p>
+						</div>
+						<div class = "service" align="center">
+							<img class = "icon-medium" src = "images/sicoge.png" alt = "projeto">
+							<p>Feito em Excel, este sistema tem por objetivo, o controle de Validades, Entradas e Saídas 
+							de Mantimentos.</p>
+						</div>
+						<div class = "service" align="center">
+							<img class = "icon-medium" src = "images/sibuf.png" alt = "projeto">
+							<p>Feito em Excel, este sistema é uma planilha de dados, que auxilia na busca
+							de fornecedores,retornando também os itens ditribuidos pelo mesmo.</p>
+						</div>
+						
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a name = "contact"></a>
+                <div class = "container">
+                    <h1 class = "contato">Contato</h1>
+                    <h2 class = "subheadline">Tem alguma pergunta ou algum projeto em mente?</h2>
+
+                    <form id = "contact-form" method = "post" action = "email.php">
+						<input required class = "box-shadow" type = "text" name = "name" placeholder = "Nome">
+						<input required class = "box-shadow" type = "text" name = "emailAddress" placeholder = "Endereço de Email">
+						<input required class = "box-shadow" type = "text" name = "subject" placeholder = "Assunto">
+						<textarea required class = "box-shadow" name = "message" placeholder = "Mensagem"></textarea>
+						<button class = "button-rectangle button-light box-shadow" name="enviar">ENVIAR</button>
+					</form>
+                </div>
+            </section>
+        </main>
+
+        <footer class = "box-shadow">
+			<nav id = "collapsible-menu">
+            <ul>
+                <li><a class = "text-shadow" href = "#">INÍCIO</a></li>
+                    <li><a href = "#sobre">SOBRE</a></li>
+                    <li><a href = "#portfolio">Projetos</a></li>
+                    <li><a href = "#contact">CONTATO</a></li>
+            </ul>
+        </nav>
+            <form action = "#">
+                <button id = "arrow-container" class = "box-shadow" title = "Ir para o topo">
+                    <svg width = "100%" height = "100%" viewBox = "0 0 100 100" preserveAspectRatio = "none">
+                        <polygon points = "50 , 20 50 , 35 80 , 35 80 , 65 50 , 65 50 , 80 20 , 50">
+                    </svg>
+                </button>
+            </form>
+        </footer>
+		<script src = "js/script.js"></script>
+    </body>
+</html>

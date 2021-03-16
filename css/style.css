@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,700|Montserrat:400,700|Roboto:100,300,400,700");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+a {
+  transition: 0.2s;
+}
+
+.container {
+  padding: 100px 20px;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 100px 0;
+  }
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+}
+header nav {
+  display: flex;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1180px;
+  height: 50px;
+  line-height: 50px;
+  
+}
+@media (min-width: 768px) {
+  header nav {
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  header nav {
+    padding: 0;
+    justify-content: normal;
+  }
+}
+header nav #collapsible-menu-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 15px;
+  background-image: url("../images/icon_collapsible-menu.svg");
+}
+@media (min-width: 768px) {
+  header nav #collapsible-menu-button {
+    display: none;
+  }
+}
+header nav ul {
+  display: none;
+  list-style-type: none;
+
+}
+@media (min-width: 768px) {
+  header nav ul {
+    display: flex;
+  }
+}
+header nav ul li {
+  margin: 0 20px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+header nav ul li:first-of-type {
+  margin-left: 0;
+}
+header nav ul li a {
+  color: #CCC;
+  text-decoration: none;
+}
+header nav ul li a:visited {
+  color: #CCC;
+}
+header nav ul li a:hover {
+  color: #FFF;
+}
+
+section:nth-of-type(even) {
+  background-color: #333;
+  color: #ccc;
+}
+
+section:nth-of-type(odd) {
+  background-color: #ccc;
+  color: #333;
+}
+
+section:first-of-type {
+  background-color: #333333F2;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.overlay li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../images/planof.jpg") center;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 1180px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #hero {
+    padding: 200px 0;
+  }
+}
+.icon-medium {
+  width: 200px;
+  height: 50px;
+}
+
+#name {
+	font-size: 60px;
+	font-weight: 700;
+	font-family: Agency FB;
+	
+	color: black;
+	margin: 5px;
+	padding: 5px 30px 5px 30px;
+	text-transform: lowercase;
+	border-bottom: 5px solid;
+	border-color: #0B3861;
+}
+#description {
+  margin-bottom: 50px;
+  font-family: Comic Sans MS;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.5em;
+  color: white;
+  font-style:italic;
+}
+
+button {
+  transition: 0.25s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button-rectangle {
+  width: 240px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.button-light {
+  border-bottom: 2px solid #333;
+  background-color: #FFF;
+  color: #333;
+}
+
+.button-light:hover, .button-light:focus {
+  border-color: #000;
+  color: #000;
+}
+
+.text-shadow {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-shadow: 0 1px 5px #00000059;
+}
+
+.box-shadow {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  box-shadow: 0 1px 5px #00000059;
+}
+.perfil {
+    width: 280px;
+	height: 300px;
+	padding-right:20px;
+	align-items: center;
+}
+.headline {
+  font-size: 30px;
+  width:300px;
+  padding-top: 20px;
+  border-bottom: 10px solid;
+  border-color: white;
+}
+.headline2 {
+  font-size: 30px;
+  width:300px;
+  padding-top: 20px;
+  border-bottom: 10px solid;
+  border-color: white;
+}
+.contato {
+  font-size: 30px;
+  width:300px;
+  padding-top: 20px;
+  color:white;
+}
+.subheadline {
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#citation {
+  font-size: 18px;
+  padding-top:40px;
+  font-style: italic;
+  line-height: 1.5em;
+  text-align: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  #services-container {
+    margin: 10px 0;
+    display: grid;
+	padding-top:60px;
+	padding-bottom:200px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  
+}
+.service {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .service {
+    padding: 20px;
+  }
+}
+.service p {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.service:nth-of-type(2) {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+@media only screen and (min-width: 768px) {
+  .service:nth-of-type(2) {
+    border: 0;
+  }
+}
+.projects-container {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom:20px;
+  display: grid;
+  grid-auto-rows: 350px;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+@media only screen and (min-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+}
+@media only screen and (min-width: 960px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  }
+}
+.projects-container .project {
+  border: 1px solid #333;
+}
+.projects-container .project div {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  background-color: #CCC;
+  list-style-type: none;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.projects-container .project div h3, .projects-container .project div p {
+  font-size: 18px;
+  font-weight: 700;
+}
+.projects-container .project div h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.projects-container .project div:hover {
+  opacity: 0.9;
+}
+.projects-container .project:nth-of-type(1) {
+  background:url("../images/documento.jpg") center no-repeat;
+  background-size: cover;
+}
+.projects-container .project:nth-of-type(2) {
+  background: url("../images/slides.jpg") center no-repeat;
+  background-size: cover;
+}
+.projects-container .project:nth-of-type(3) {
+  background: url("../images/planilhas.jpg") center no-repeat;
+  background-size: cover;
+}
+.projects-container .project:nth-of-type(4) {
+  background: url("../images/programa.jpg") center no-repeat;
+  background-size: cover;
+}
+.projects-container + p {
+  margin: 20px 0;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+#contact-form {
+  margin: 50px 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-columns: 240px;
+  justify-content: center;
+}
+#contact-form input {
+  height: 30px;
+  padding: 10px;
+  border: 0;
+  border-radius: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) {
+  #contact-form input[name=emailAddress] {
+    grid-column: 2;
+  }
+  #contact-form input[name=subject], #contact-form textarea {
+    grid-column: 1/3;
+  }
+  #contact-form button {
+    grid-column: 2;
+  }
+}
+#contact-form textarea {
+  height: 150px;
+  padding: 10px;
+  border: 0;
+  border-radius: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  overflow-y: scroll;
+  resize: none;
+}
+.email-container {
+  max-width: 90%;
+  margin: 50px auto;
+  text-align: center;
+}
+.email-container img {
+  filter: drop-shadow(0 1px 5px #00000059);
+}
+.email-container h1 {
+  margin-top: 20px;
+}
+.email-container h2 {
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+}
+footer #arrow-container {
+  box-sizing: content-box;
+  width: 50px;
+  height: 50px;
+  border-bottom: 2px solid #CCC;
+  position: relative;
+  bottom: 25px;
+}
+footer #arrow-container svg {
+  transform: rotate(90deg);
+  background-color: #333;
+}
+footer #arrow-container svg polygon {
+  fill: #CCC;
+  transition: 0.25s;
+}
+footer #arrow-container:hover, footer #arrow-container:focus {
+  border-color: #FFF;
+}
+footer #arrow-container:hover svg polygon, footer #arrow-container:focus svg polygon {
+  fill: #FFF;
+}
+footer nav {
+  position: fixed;
+  top: 50px;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  transition: 0.2s;
+}
+@media (min-width: 768px) {
+  footer nav {
+    display: none;
+  }
+}
+footer nav ul {
+  flex-direction: column;
+}
+footer nav ul li {
+  margin: 20px;
+  text-align: left;
+}
+footer nav ul li a {
+  color: #CCC;
+  text-decoration: none;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div a {
+  display: block;
+  margin: 50px 10px;
+  font-size: 0;
+}
+.menu-active {
+  left: 0;
+}
+button {
+  height: 50px;
+  font-family: "Roboto";
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+button:hover {
+  cursor: pointer;
+
+}
